@@ -12,7 +12,7 @@ export default function Home() {
   const [loading, setloading] = useState(false);
   const [weather, setweather] = useState({});
   const [error, seterror] = useState(false);
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${process.env.NEXT_PUBLIC_WEATHER_API_KEY}&units=imperial`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${process.env.NEXT_PUBLIC_WEATHER_API_KEY}&units=metric`;
   const FeachWeather = (e) => {
     e.preventDefault();
     setloading(true);
