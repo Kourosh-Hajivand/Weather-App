@@ -45,19 +45,20 @@ export default function Home() {
           alt=""
           className={Styles.background}
           layout="fill"
+          placeholder="empty"
           src="https://images.unsplash.com/photo-1536532184021-da5392b55da1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
         />
 
         <div className="container">
           <Row>
-            <Col md={6} className="offset-md-3 mb-5">
+            <Col lg={6} className="offset-lg-3 mb-0 mb-lg-5">
               <h1
                 data-aos="fade-up"
                 data-aos-delay="50"
                 data-aos-duration="800"
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="true"
-                className={Styles.Titel}
+                className={`${Styles.Titel} mt-5`}
               >
                 Weather App
               </h1>
@@ -68,7 +69,7 @@ export default function Home() {
                 data-aos-duration="1100"
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="true"
-                className={Styles.MainForm}
+                className={`${Styles.MainForm} mt-3`}
               >
                 <form onSubmit={FeachWeather} className={Styles.Form}>
                   <div>
@@ -94,8 +95,8 @@ export default function Home() {
 
           <Row>
             <Col
-              md={6}
-              className="  offset-md-3 d-flex justify-content-center align-items-center"
+              lg={6}
+              className="  offset-lg-3 d-flex justify-content-center align-items-center"
             >
               {loading ? (
                 <Spain />
